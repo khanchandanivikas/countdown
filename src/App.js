@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       const today = new Date();
-      const future = new Date("Jan 1, 2022 00:00:00");
+      const future = new Date("June 1, 2022 00:00:00");
       const diff = Date.parse(future) - Date.parse(today);
       let days = Math.floor(diff / (1000 * 60 * 60 * 24));
       let hour = Math.floor(diff / (1000 * 60 * 60));
